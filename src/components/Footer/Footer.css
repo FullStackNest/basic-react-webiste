@@ -1,4 +1,35 @@
-.footer-container {
-    height: 300px;
-    background-color: dodgerblue;
+/* footer section */
+.footer {
+    min-height: 300px;
+    overflow-x: hidden;
+}
+
+.brand-image-footer {
+    width: 250px;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.image-rounded {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.footer-heading {
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+#footer-text-links a {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+#footer-text-links a:hover {
+    text-decoration: underline !important;
+    color: white !important;
 }
