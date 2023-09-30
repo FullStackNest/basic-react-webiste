@@ -1,0 +1,5 @@
+.page-wrapper-container {
+    padding: 0.6rem 1rem;
+    min-height: 100dvh;
+    /* dvh: device viewport height */
+}
