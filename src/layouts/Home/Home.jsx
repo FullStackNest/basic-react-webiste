@@ -1,11 +1,11 @@
-import PageWrapper from '../../components/PageWrapper/PageWrapper'
+
 import './Home.css'
 import ImageOne from '../../assets/web-design.png';
 import Cards from '../../components/Cards/Cards';
 
 const Home = () => {
     return (
-        <PageWrapper>
+        <>
             <div className="">
                 <h1>Home</h1>
                 <img className='img-rounded' src={ImageOne} alt='Image For web designing' />
@@ -14,8 +14,8 @@ const Home = () => {
             <h1>Our Tour Packages</h1>
 
             <Cards />
+        </>
 
-        </PageWrapper>
     )
 }
 
