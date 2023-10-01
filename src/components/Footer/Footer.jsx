@@ -44,6 +44,13 @@ const Footer = () => {
 
                     <div className="col-12">
                         <p className="text-light text-center px-3">&copy;Travel Era | 2010 - 2023</p>
+                        <p className="text-light text-center px-3">
+                            <i className="xxl bi bi-facebook"></i>
+                            <i className="xxl bi bi-instagram"></i>
+                            <i className="xxl bi bi-twitter"></i>
+                            <i className="xxl bi bi-linkedin"></i>
+                            <i className="xxl bi bi-github"></i>
+                        </p>
                     </div>
 
                 </div>
