@@ -3,7 +3,8 @@ export const routePaths = {
     aboutUs: '/about-us',
     allServices: '/all-services',
     contactUs: '/contact-us',
-    allServicesSubPages: '/all-services/:subPageId'
+    allServicesSubPages: '/all-services/:subPageId',
+    pageNotFound: '*'
 }
 
 export const onlineBookingPath = 'online-booking';

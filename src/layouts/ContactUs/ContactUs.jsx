@@ -1,5 +1,6 @@
 
 import UserForm from '../../components/UserForm/UserForm'
+import ImageSlider from '../../components/ImageSlider/ImageSlider';
 import './ContactUs.css'
 
 const ContactUs = () => {
@@ -16,7 +17,7 @@ const ContactUs = () => {
                 {/* Form divison end */}
                 <div className="col-12 col-lg-6 col-xl-7">
                     {/* Space for Image Slider */}
-
+                    <ImageSlider />
                 </div>
             </div>
 

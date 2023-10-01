@@ -22,7 +22,7 @@ function App() {
           <Route path={routePaths.aboutUs} exact element={<AboutUs />} />
           <Route path={routePaths.allServices} exact element={<AllServices />} />
           <Route path={routePaths.allServicesSubPages} exact element={<AllServices />} />
-          <Route path='*' element={<Error404NotFound />} />
+          <Route path={routePaths.pageNotFound} element={<Error404NotFound />} />
         </Routes>
       </PageWrapper>
       <Footer />
