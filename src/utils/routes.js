@@ -4,6 +4,7 @@ export const routePaths = {
     allServices: '/all-services',
     contactUs: '/contact-us',
     allServicesSubPages: '/all-services/:subPageId',
+    products: '/products',
     pageNotFound: '*'
 }
 

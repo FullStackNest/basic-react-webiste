@@ -1,0 +1,21 @@
+.custom-card {
+    border: 1px solid lightblue;
+    border-radius: 10px;
+}
+
+.img-square {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 10px;
+}
+
+.img-rounded {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: 2px solid red;
+}
+
+.details {
+    max-width: 500px;
+}

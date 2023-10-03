@@ -1,7 +1,8 @@
 
-import UserForm from '../../components/UserForm/UserForm'
 import ImageSlider from '../../components/ImageSlider/ImageSlider';
 import './ContactUs.css'
+import Modal from '../../components/Modal/Modal';
+import UserForm from '../../components/UserForm/UserForm';
 
 const ContactUs = () => {
 
@@ -12,14 +13,30 @@ const ContactUs = () => {
                 <i className="text-primary bi bi-telephone-outbound-fill"></i>&nbsp;Contacts</h1>
             <div className="row">
                 <div className="col-12 col-lg-6 col-xl-5">
-                    <UserForm />
+                    <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactForm">
+                        Open Contact Form
+                    </button>
+                    {/* <!-- Modal --> */}
+                    <Modal modalId="contactForm">
+                        <UserForm />
+                    </Modal>
+
                 </div>
                 {/* Form divison end */}
                 <div className="col-12 col-lg-6 col-xl-7">
                     {/* Space for Image Slider */}
-                    <ImageSlider />
+
+                    <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imageSlider">
+                        Open Image Slider
+                    </button>
+                    {/* <!-- Modal --> */}
+                    <Modal modalId="imageSlider">
+                        <ImageSlider />
+                    </Modal>
                 </div>
             </div>
+
+
 
         </>
     )

@@ -9,6 +9,7 @@ import AllServices from './layouts/AllServices/AllServices'
 import AboutUs from './layouts/AboutUs/AboutUs'
 import PageWrapper from './components/PageWrapper/PageWrapper'
 import { routePaths } from './utils/routes'
+import Products from './layouts/Products/Products'
 
 function App() {
 
@@ -22,7 +23,9 @@ function App() {
           <Route path={routePaths.aboutUs} exact element={<AboutUs />} />
           <Route path={routePaths.allServices} exact element={<AllServices />} />
           <Route path={routePaths.allServicesSubPages} exact element={<AllServices />} />
+          <Route path={routePaths.products} exact element={<Products />} />
           <Route path={routePaths.pageNotFound} element={<Error404NotFound />} />
+
         </Routes>
       </PageWrapper>
       <Footer />

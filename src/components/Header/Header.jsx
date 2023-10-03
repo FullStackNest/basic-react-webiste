@@ -36,6 +36,9 @@ const Header = () => {
                             <li className="nav-item">
                                 <Link className="nav-link  text-light" to={routePaths.contactUs}>Contact US</Link>
                             </li>
+                            <li className="nav-item">
+                                <Link className="nav-link  text-light" to={routePaths.products}>Products</Link>
+                            </li>
                         </ul>
                         <form className="d-flex">
                             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
