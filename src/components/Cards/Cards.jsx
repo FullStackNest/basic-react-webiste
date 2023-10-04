@@ -1,4 +1,5 @@
-import { CARD_DATA } from "../../data/CardData"
+// import { CARD_DATA } from "../../data/CardData"
+import { CARD_DATA } from "@/data/CardData";
 import './Cards.css'
 
 

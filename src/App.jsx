@@ -1,15 +1,10 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
-import Footer from './components/Footer/Footer'
-import Header from './components/Header/Header'
-import ContactUs from './layouts/ContactUs/ContactUs'
-import Home from './layouts/Home/Home'
-import Error404NotFound from './layouts/Error404NotFound/Error404NotFound'
-import AllServices from './layouts/AllServices/AllServices'
-import AboutUs from './layouts/AboutUs/AboutUs'
-import PageWrapper from './components/PageWrapper/PageWrapper'
-import { routePaths } from './utils/routes'
-import Products from './layouts/Products/Products'
+
+import { routePaths } from '@/utils/routes'
+import { Home, AllServices, AboutUs, ContactUs, Products, Error404NotFound } from '@/layouts'
+import { Footer, Header, PageWrapper } from '@/components'
+
 
 function App() {
 

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import './Products.css'
-import ProductItem from "../../components/ProductItem/ProductItem";
+import { ProductItem } from "@/components";
+
 
 
 const Products = () => {

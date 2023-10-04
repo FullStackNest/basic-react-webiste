@@ -1,8 +1,6 @@
 
-import ImageSlider from '../../components/ImageSlider/ImageSlider';
-import './ContactUs.css'
-import Modal from '../../components/Modal/Modal';
-import UserForm from '../../components/UserForm/UserForm';
+import { ImageSlider, Modal, UserForm } from '@/components' // absolute imports
+import './ContactUs.css' // relative imports ../../../
 
 const ContactUs = () => {
 

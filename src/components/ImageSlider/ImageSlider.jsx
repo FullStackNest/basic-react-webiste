@@ -1,6 +1,7 @@
-import { SLIDER_DATA } from '../../data/SliderData'
-import SliderItem from '../SliderItem/SliderItem'
+import { SLIDER_DATA } from '@/data/SliderData'
+
 import './ImageSlider.css'
+import { SliderItem } from '@/components'
 
 const ImageSlider = () => {
     return (
