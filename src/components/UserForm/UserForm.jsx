@@ -1,8 +1,11 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './UserForm.css'
+
+import { toast } from 'react-toastify';
 
 const UserForm = () => {
     // states => useState() hook, useRef() =>
+    const [submitted, setSubmitted] = useState(false);
     const [userInputs, setUserInputs] = useState({
         userEmail: '',
         mobileNumber: '',
@@ -15,7 +18,16 @@ const UserForm = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(userInputs);
+        // setSubmitted(!submitted)
+        toast("Wow so easy !")
     }
+
+    useEffect(() => {
+        setTimeout(() => {
+            setSubmitted(false);
+        }, 4000);
+    }, [submitted]);
+
     const handleInputChange = (e) => {
         const { name, value } = e.target;
         setUserInputs(prev => {
@@ -86,6 +98,13 @@ const UserForm = () => {
             <div className="form-group my-3">
                 <button className='btn btn-primary' type='submit'>Submit</button>
             </div>
+
+            {/* {submitted && (
+                <div className="alert alert-primary" role="alert">
+                    A simple secondary alert—check it out!
+                </div>
+            )} */}
+
         </form>
     )
 }

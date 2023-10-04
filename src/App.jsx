@@ -1,9 +1,10 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
-
+import 'react-toastify/dist/ReactToastify.css';
 import { routePaths } from '@/utils/routes'
 import { Home, AllServices, AboutUs, ContactUs, Products, Error404NotFound } from '@/layouts'
 import { Footer, Header, PageWrapper } from '@/components'
+import { ToastContainer } from 'react-toastify'
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path={routePaths.pageNotFound} element={<Error404NotFound />} />
 
         </Routes>
+        <ToastContainer />
       </PageWrapper>
       <Footer />
     </>
