@@ -1,6 +1,6 @@
 import './PageWrapper.css';
+import PropTypes from 'prop-types';
 
-// eslint-disable-next-line react/prop-types
 const PageWrapper = ({ children }) => {
     return (
         <div className='page-wrapper-container'>
@@ -9,4 +9,7 @@ const PageWrapper = ({ children }) => {
     )
 }
 
+PageWrapper.propTypes = {
+    children: PropTypes.node,
+}
 export default PageWrapper

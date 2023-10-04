@@ -1,5 +1,6 @@
-/* eslint-disable react/prop-types */
+
 import './ProductItem.css'
+import PropTypes from 'prop-types';
 
 /**
  * 
@@ -20,6 +21,10 @@ const ProductItem = ({ item, imageType }) => {
             <img className={`img-${imageType}`} src={item.image} />
         </div>
     )
+}
+ProductItem.propTypes = {
+    item: PropTypes.array,
+    imageType: PropTypes.string,
 }
 
 export default ProductItem
