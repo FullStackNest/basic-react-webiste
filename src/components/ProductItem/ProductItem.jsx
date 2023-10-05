@@ -23,7 +23,7 @@ const ProductItem = ({ item, imageType }) => {
     )
 }
 ProductItem.propTypes = {
-    item: PropTypes.array,
+    item: PropTypes.object,
     imageType: PropTypes.string,
 }
 
